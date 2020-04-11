@@ -1,0 +1,15 @@
+.container {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    & .slideShow{
+        margin: auto;
+        width:50%;
+        height: auto;
+    }
+    & .containerCard {
+        margin: auto;
+        width: 80%;
+    }
+}
