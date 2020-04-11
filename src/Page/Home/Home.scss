@@ -1,0 +1,32 @@
+$colorNavbar : #bdf1ff;
+$colorlink : #ff95b8;
+$colorHover : #51ff76;
+$colorActive : #f5ff08;
+
+.navigation {
+    background: $colorNavbar;
+    overflow: hidden;
+    height: 30hv;
+    padding: 8hv;
+    &logo {
+        position: relative;
+    }
+    & a {
+        float: right;
+        font-family: Annie Use Your Telescope;
+        font-size: 20px;
+        padding: 10px 30px;
+        margin-top: -15px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: $colorlink;
+    }
+    & a:hover {
+        background-color: $colorlink;
+        color: $colorNavbar;
+    }
+    & a:active {
+        background-color: $colorActive;
+        color: $colorlink;
+    }
+}

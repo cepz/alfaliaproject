@@ -1,0 +1,13 @@
+.logoWhatsaap {
+    position: fixed;
+    margin: 450px auto auto 1250px;
+    & img {
+        margin-top: auto;
+        width: 200px;
+        height: auto;
+        left: 0;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+    }
+}
