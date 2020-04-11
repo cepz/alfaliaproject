@@ -3,6 +3,22 @@ $colorlink : #ff95b8;
 $colorHover : #51ff76;
 $colorActive : #f5ff08;
 
+.header {
+    background-color: $colorlink;
+    color: $colorNavbar;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    & span {
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+    & p.right {
+        margin: auto;
+        float: right;
+    }
+}
+
 .navigation {
     position: relative;
     background: $colorNavbar;

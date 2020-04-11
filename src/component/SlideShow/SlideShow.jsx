@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Slider from 'react-slick'
 
 // Import css files
@@ -10,13 +10,18 @@ import image2 from '../../Global-Assets/images/banner/image2.jpg';
 import image3 from '../../Global-Assets/images/banner/image3.jpg';
 
 function SlideShow() {
-    const settings = {
+    const [settings, setSettings] = useState({
         dots: true,
-        infinite: true,
-        speed: 500,
-        SlideSwow: 1,
-        slideToScroll:1
-    }
+            infinite: true,
+            speed: 500,
+            SlideSwow: 1,
+            slideToScroll:1
+    })
+
+    useEffect(() => {
+        return document.title = `Alfalia Store - Home`; 
+    })
+
     return (
         <div>
             <Slider {...settings}>
