@@ -1,13 +1,18 @@
-import React from 'react'
+import React , { useEffect } from 'react'
 import SlideShow from '../../component/SlideShow'
 import './Dasboard.scss'
 import Card from '../../component/Card'
 
-import image1 from '../../Global-Assets/images/productBanner/banner1.jpg'
-import image2 from '../../Global-Assets/images/productBanner/Banner2.jpg'
-import image3 from '../../Global-Assets/images/productBanner/banner3.jpg'
+import {imageBanner} from '../../component/Images/Images'
 
 function Dasboard() {
+
+    useEffect(() => {
+        return document.title = `Alfalia Store - Home`; 
+    }, [])
+
+    console.log(useEffect)
+
     return (
         <div className="container">
             <div className="slideShow">
@@ -15,9 +20,11 @@ function Dasboard() {
             </div>
             <br/>
             <div className="containerCard">
-                <Card title="Baby Clothes" src={image1}/>
-                <Card title="Kids Clothes" src={image2}/>
-                <Card title="Kids Clothes" src={image3}/>
+                {
+                    imageBanner.map((_, index) => {
+                        return <Card key={index} src={_.src}/>
+                    })
+                }
             </div>
         </div>
     )
