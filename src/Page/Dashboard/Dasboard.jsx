@@ -3,12 +3,12 @@ import SlideShow from '../../component/SlideShow'
 import './Dasboard.scss'
 import Card from '../../component/Card'
 
-import {imageBanner} from '../../component/Images/Images'
+import {imageBanner} from '../../component/Images'
 
 function Dasboard() {
 
     useEffect(() => {
-        return document.title = `Alfalia Store - Home`; 
+         document.title = `Alfalia Store - Home`;
     }, [])
 
     console.log(useEffect)

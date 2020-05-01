@@ -1,11 +1,4 @@
 import Logo from '../../Global-Assets/global/alfalialogo-header.png'
-import {
-    FaHome,
-    FaFacebook,
-    FaInstagram,
-    FaPaperPlane} from 'react-icons/fa'
-import {AiOutlineCoffee} from 'react-icons/ai'
-import { IoIosLock, IoIosCart, IoIosPricetags, IoLogoWhatsapp } from 'react-icons/io'
 
 import imageBanner1 from '../../Global-Assets/images/productBanner/banner1.jpg'
 import imageBanner2 from '../../Global-Assets/images/productBanner/Banner2.jpg'
@@ -51,21 +44,8 @@ export const imageBanner = [
     },
 ]
 
-export const icons = {
-    FaHome,
-    FaFacebook,
-    FaInstagram,
-    FaPaperPlane,
-    AiOutlineCoffee,
-    IoIosCart,
-    IoIosLock,
-    IoIosPricetags,
-    IoLogoWhatsapp
-}
-
 export const logo = {
     id : 0,
     src : Logo,
     alt: 'Logo Alfalia Store'
 }
-

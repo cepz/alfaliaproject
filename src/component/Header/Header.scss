@@ -1,0 +1,22 @@
+$colorlink : #ff95b8;
+$colorNavbar : #bdf1ff;
+
+.header {
+    background-color: $colorlink;
+    color: $colorNavbar;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    & p.icon {
+        float: left;
+        margin: auto;
+        margin-left: 40px;
+        position: relative;
+    }
+    & p.right {
+        float: right;
+        margin: auto;
+        margin-right: 40px;
+        position: relative;
+    }
+}
