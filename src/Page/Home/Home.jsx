@@ -1,20 +1,16 @@
 import React from 'react'
 import './Home.scss'
+import SlideShow from '../../component/SlideShow'
+
+import { Container } from "react-bootstrap";
 
 class Home extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-
-        }
-    }
 
     render() {
         return (
-            <>
-            <p>Home</p>
-            </>
+            <Container className="mt-4">
+                {/* <SlideShow/> */}
+            </Container>
         )
 
     }

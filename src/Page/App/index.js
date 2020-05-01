@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css';
+import {Container} from 'react-bootstrap'
 
 import Header from '../../component/Header';
 import Navbar from '../../component/Navbar';
@@ -16,7 +17,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <>
+        <Container fluid>
           <Header/>
           <Navbar/>
           <WhatsappLogo/>
@@ -25,7 +26,7 @@ const App = () => {
             <Route path="/articles" component={Article}/>
             <Route path="/cart" component={Cart}/>
             <Route path="/login" component={Login}/>
-        </>
+        </Container>
       </Router>
     </div>
   );
