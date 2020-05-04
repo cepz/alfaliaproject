@@ -10,17 +10,17 @@ import Slide3 from '../../Global-Assets/images/banner/image3.jpg'
 
 export const slide = [
     {
-        id: 4,
+        id: 1,
         src: Slide1,
         alt: "slide 1"
     },
     {
-        id: 5,
+        id: 2,
         src: Slide2,
         alt: "slide 2"
     },
     {
-        id: 6,
+        id: 3,
         src: Slide3,
         alt: "slide 3"
     },

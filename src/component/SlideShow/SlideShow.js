@@ -2,34 +2,21 @@ import React, {Component} from 'react'
 import {Carousel} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {slide} from '../Images'
+import image1 from '../../Global-Assets/images/banner/image1.jpg'
+import image2 from '../../Global-Assets/images/banner/image2.jpg'
+import image3 from '../../Global-Assets/images/banner/image3.jpg'
 
 class SlideShow extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-             imageSlide : []
-        }
-    }
-
-    imageSet(){
-        return this.setState({
-            imageSlide : this.state.slide
-        })
-    }
 
     render() {
         return (
-            <>
+            <div>
                 <Carousel>
-
                            <Carousel.Item>
                             <img
                             className="d-block w-100"
-                            src={slide.src}
-                            alt={slide.alt}
-                            />
+                            src={image1}
+                            alt="image1"/>
                             <Carousel.Caption>
                             <h3>First slide label</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -39,8 +26,8 @@ class SlideShow extends Component {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
-                        alt="Third slide"
+                        src={image2}
+                        alt="image2"
                         />
 
                         <Carousel.Caption>
@@ -51,8 +38,8 @@ class SlideShow extends Component {
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
-                        alt="Third slide"
+                        src={image3}
+                        alt="image3"
                         />
 
                         <Carousel.Caption>
@@ -61,7 +48,7 @@ class SlideShow extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                     </Carousel>
-            </>
+            </div>
         )
     }
 }

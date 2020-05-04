@@ -2,7 +2,7 @@ import React from 'react'
 import {logo} from '../Images'
 import {Link} from 'react-router-dom'
 import {icons} from '../Icons'
-import {Navbar, Nav} from 'react-bootstrap'
+import {Navbar} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './Navbar.scss'
@@ -13,11 +13,11 @@ function NavbarMenu() {
                     <div className="logo">
                         <img src={logo.src} alt={logo.alt}></img>
                     </div>
-                    <>
-                        <Navbar expand="lg" className="justify-content-end">
+                    <div>
+                        <Navbar expand="lg" className="justify-content-end float-right">
                             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                                 <Navbar.Collapse id="basic-navbar-nav" >
-                                                <div className="menu justify-content-end">
+                                                <div className="menu">
                                                         <Link to='/'><span><icons.FaHome/></span> Home</Link>
                                                         <Link to='/Product'><span><icons.IoIosPricetags/></span> Product</Link>
                                                         <Link to='/Cart'><span><icons.IoIosCart/></span> Cart</Link>
@@ -26,7 +26,7 @@ function NavbarMenu() {
                                                 </div>
                                 </Navbar.Collapse>
                         </Navbar>
-                   </>
+                   </div>
             </div>
     )
 }
