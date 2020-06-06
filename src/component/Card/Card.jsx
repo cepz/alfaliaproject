@@ -3,7 +3,7 @@ import './Card.scss'
 
 const Card = (props) => {
     return (
-        <div className="card">
+        <div className="card mt-4">
             <img src={props.src} alt="Denim Jeans"/>
             <h1 className="title">{props.title}</h1>
             <p>Some text about the jeans..</p>
