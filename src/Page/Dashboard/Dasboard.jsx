@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SlideShow from '../../component/SlideShow'
 import './Dasboard.scss'
 import Card from '../../component/Card'
@@ -8,6 +8,7 @@ import image2 from '../../Global-Assets/images/productBanner/Banner2.jpg'
 import image3 from '../../Global-Assets/images/productBanner/banner3.jpg'
 
 function Dasboard() {
+    
     return (
         <div className="container">
             <div className="slideShow">
