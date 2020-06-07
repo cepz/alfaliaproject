@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import './Header.scss';
 
 function Header() {
     return (
@@ -13,7 +15,7 @@ function Header() {
                     </a>
                   </div>
                 <div className="justify-content-end">
-                  <span><i className="zmdi zmdi-whatsapp"> +62 821 1781 3096 </i> </span>
+                  <span><i className="zmdi zmdi-whatsapp"> +6282117813096 </i> </span>
                     <i className="zmdi zmdi-email"> <span>alfaliakids@gmail.com </span></i>
                 </div>
             </div>

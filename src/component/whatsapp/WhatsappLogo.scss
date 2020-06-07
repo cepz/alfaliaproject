@@ -1,0 +1,9 @@
+.footer img{
+    margin-right: 80px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer img {
+        margin-right: 0; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }

@@ -1,4 +1,4 @@
-import Logo from '../../Global-Assets/global/alfalialogo-header.png'
+import Logo from '../../Global-Assets/global/alfalialogo-icon.png'
 
 import imageBanner1 from '../../Global-Assets/images/productBanner/banner1.jpg'
 import imageBanner2 from '../../Global-Assets/images/productBanner/Banner2.jpg'
@@ -28,23 +28,26 @@ export const slide = [
 
 export const imageBanner = [
     {
-        id : 1,
+        id : 4,
         src : imageBanner1,
-        alt : 'image banner 1'
+        alt : 'image banner 1',
+        title : 'Boys'
     },
     {
-        id : 2,
+        id : 5,
         src : imageBanner2,
-        alt : 'image Banner 2'
+        alt : 'image Banner 2',
+        title : 'Girls'
     },
     {
-        id : 3,
+        id : 6,
         src : imageBanner3,
-        alt : 'iamge Banner 3'
-    },
+        alt : 'iamge Banner 3',
+        title: `Mom's & Dad`
+    }
 ]
 
-export const logo = {
+export const logoImage = {
     id : 0,
     src : Logo,
     alt: 'Logo Alfalia Store'
