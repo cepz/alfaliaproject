@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React from "react";
 
-class Article extends Component {
-    render() {
-        return (
-            <div>
-                <p>Article</p>
-            </div>
-        )
-    }
-}
+const Article = () => {
+  return (
+    <div className="container">
+      <div className="card">
+        <div className="header">
+          <h1>Article</h1>
+        </div>
+        <div className="content">
+          <h4>Content Article</h4>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Article
+export default Article;
