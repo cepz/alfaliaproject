@@ -91,7 +91,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link btn-success btn-sm"
+                    className="nav-link bg-pink btn-success btn-sm"
                     to="/login"
                     tabIndex="-1"
                   >
