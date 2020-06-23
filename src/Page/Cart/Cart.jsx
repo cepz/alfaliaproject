@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React from "react";
 
-class Cart extends Component {
-    render() {
-        return (
-            <div>
-                <p>Cart</p>
-            </div>
-        )
-    }
-}
+const Cart = () => {
+  return (
+    <div className="container">
+      <div className="card">
+        <div className="header">
+          <h1>Cart</h1>
+        </div>
+        <div className="content">
+          <h4>Content Cart</h4>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Cart
+export default Cart;
