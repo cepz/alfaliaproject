@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { logoImage } from "../../component/Images";
 
 const Login = () => {
+  const [date, setDate] = React.useState("");
+
+  React.useEffect(() => {
+    setDate(new Date().getFullYear());
+  }, []);
   return (
     <div className="authentication">
       <div className="container">
@@ -9,7 +15,13 @@ const Login = () => {
           <div className="col-lg-4 col-sm-12">
             <form className="card auth_form">
               <div className="header">
-                <img className="logo" src="assets/images/logo.svg" alt="" />
+                <Link to="/">
+                  <img
+                    className="logo"
+                    src={logoImage.src}
+                    alt={logoImage.alt}
+                  />
+                </Link>
                 <h5>Log in</h5>
               </div>
               <div className="body">
@@ -58,12 +70,7 @@ const Login = () => {
               </div>
             </form>
             <div className="copyright text-center">
-              <span>Designed by MangCep Developer</span>
-            </div>
-          </div>
-          <div className="col-lg-8 col-sm-12">
-            <div className="card">
-              <img src="assets/images/signin.svg" alt="Sign In" />
+              <span> © {date} , Designed by MangCep Developer</span>
             </div>
           </div>
         </div>

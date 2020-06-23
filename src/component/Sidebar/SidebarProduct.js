@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SidebarProduct() {
   return (
     <>
-      <div className="card bg-pink">
+      <div className="card">
         <div className="header text-center">
           <h2>Categories</h2>
         </div>
@@ -128,6 +128,45 @@ function SidebarProduct() {
             </div>
             <div
               id="collapseThree"
+              className="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingThree"
+            >
+              <div className="panel-body">
+                <ul>
+                  <li>
+                    <Link to="#">Jeans</Link>
+                  </li>
+                  <li>
+                    <Link to="#">T-Shirt</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Jacket</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Shoes</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="panel panel-default">
+            <div className="panel-heading" role="tab" id="headingThree">
+              <h4 className="panel-title">
+                <a
+                  className="collapsed"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Book Store
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseFour"
               className="panel-collapse collapse"
               role="tabpanel"
               aria-labelledby="headingThree"

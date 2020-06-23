@@ -1,15 +1,34 @@
-import React from 'react';
+import React from "react";
 
-import Header from '../../component/Header';
-import Navbar from '../../component/Navbar';
+import Home from "../Home";
+import Product from "../Product";
+import Cart from "../Cart";
+import Article from "../Article";
+import Login from "../Login";
 
-function App() {
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Register from "../../Page/Register";
+import WhatsappLogo from "../../component/whatsapp";
+
+const App = () => {
   return (
     <>
-      <Header/>
-      <Navbar/>
+      <Router>
+        <div className="container-fluid">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/product" component={Product} />
+            <Route path="/cart" component={Cart} />
+            <Route path="/article" component={Article} />
+            <Route path="/login" component={Login} />
+            <Route path="/register" component={Register} />
+          </Switch>
+        </div>
+        <WhatsappLogo />
+      </Router>
     </>
   );
-}
+};
 
 export default App;
