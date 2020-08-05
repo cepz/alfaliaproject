@@ -1,5 +1,5 @@
 import React from "react";
-import Whatsapp from "../../Global-Assets/global/whatsapplogo.png";
+import Whatsapp from "../../Global-Assets/global/whatsapplogo1.png";
 import "./WhatsappLogo.scss";
 
 function WhatsappLogo() {
@@ -69,8 +69,6 @@ function WhatsappLogo() {
               <img
                 src={Whatsapp}
                 alt="logo whatsapp"
-                width="120px"
-                height="auto"
                 className="float-right"
               />
             </a>
